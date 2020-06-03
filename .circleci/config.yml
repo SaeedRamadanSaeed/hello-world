@@ -11,33 +11,13 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
-      3import java.util.logging.Logger;
+     
 4/*This object will hold the information of an order. It will hold (1) Order ID (2) Difficulty Rating (3)
 5Order Status ((i) Incomplete(ii) InProgress (iii) Complete (iv) Delivered) (4) Collection of
-	 */
-	public Order(int orderId, Vector<OrderOfDish> orderedDishes, Address customerAdress){
-		this._orderId= orderId;
-	public Vector<OrderOfDish> getDishes(){
-		Vector<OrderOfDish> orderedDishes= new Vector<OrderOfDish>();
-		int numofdishes= _orderedDishes.size();
-		for(int i=0; i < this._orderedDishes.size(); i++){
-			orderReward += this._orderedDishes.elementAt(i).calculateOrderOfDishReward();
-		}
-	public void setStatusAsDelivered(String deliveryPersonName, int orderID) {
-		this._orderStatus= Order.DELIVERED;
-		StringBuilder output= new StringBuilder("Order ");
-    3import java.util.logging.Logger;
-4/*This object will hold the information of an order. It will hold (1) Order ID (2) Difficulty Rating (3)
-5Order Status ((i) Incomplete(ii) InProgress (iii) Complete (iv) Delivered) (4) Collection of
-	 */
-	public Order(int orderId, Vector<OrderOfDish> orderedDishes, Address customerAdress){
-		this._orderId= orderId;
-	public Vector<OrderOfDish> getDishes(){
-		Vector<OrderOfDish> orderedDishes= new Vector<OrderOfDish>();
-		int numofdishes= _orderedDishes.size();
-		for(int i=0; i < this._orderedDishes.size(); i++){
-			orderReward += this._orderedDishes.elementAt(i).calculateOrderOfDishReward();
-		}
-	public void setStatusAsDelivered(String deliveryPersonName, int orderID) {
-		this._orderStatus= Order.DELIVERED;
-	StringBuilder output= new StringBuilder("Order ");
+49	 */
+50	public Order(int orderId, Vector<OrderOfDish> orderedDishes, Address customerAdress){
+51		this._orderId= orderId;
+86	public Vector<OrderOfDish> getDishes(){
+87		Vector<OrderOfDish> orderedDishes= new Vector<OrderOfDish>();
+88		int numofdishes= _orderedDishes.size();
+127		for(int i=0; i < this._orderedDishes.size(); i++){
